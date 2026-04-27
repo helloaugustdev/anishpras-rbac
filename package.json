@@ -24,8 +24,7 @@
     "check": "biome check ./src",
     "pkg-size": "npm pack --dry-run && tar -tvf anishpras-rbac-*.tgz | sort -k 3 -n",
     "prepublishOnly": "npm run lint && npm run test && npm run build:release",
-    "build:release": "NODE_ENV=production tsc -p tsconfig.publish.json && npm run minify",
-    "prepare": "npm run build:release"
+    "build:release": "NODE_ENV=production tsc -p tsconfig.publish.json && npm run minify"
   },
   "keywords": [
     "rbac",
