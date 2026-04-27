@@ -1,8 +1,7 @@
 # Dependency directories
 node_modules/
 
-# Build output
-dist/
+# Build output (dist/ is committed for git-installed consumers; rebuild with `npm run build:release`)
 build/
 lib/
 
